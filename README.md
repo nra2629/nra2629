@@ -30,9 +30,9 @@
 
 ### ⚡ Fun Facts
 
-- ✈️ Love exploring new places and experiencing different cultures
-- 🤝 Naturally a people person — love socializing and connecting with others
-- 💡 I bring a strong understanding of **people and behaviour** into everything I do
+- ✈️ Always up for exploring new places and different cultures!
+- 🤝 A people person who enjoys meeting and connecting with others!
+- 🌿 Enjoy being around nature whenever I can!
 
 ---
 
@@ -43,7 +43,7 @@
 ![SQL](https://img.shields.io/badge/SQL-f29111?style=flat&logo=mysql&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-1D6F42?style=flat&logo=microsoft-excel&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
