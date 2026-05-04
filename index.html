@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neha Malhan — Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Syne+Mono&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --bg2: #161b22;
+      --border: #21262d;
+      --border2: #30363d;
+      --text: #f0f6fc;
+      --text2: #c9c6d8;
+      --muted: #8b949e;
+      --dim: #484f58;
+      --green: #3fb950;
+      --green-dark: #0d2818;
+      --green-border: #1a4a28;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text2);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── BANNER ── */
+    .banner {
+      width: 100%;
+      height: 260px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0 0 16px 16px;
+      margin-bottom: 2.5rem;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      display: block;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(13,17,23,0.1) 0%, rgba(13,17,23,0.7) 100%);
+    }
+
+    .banner-text {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner-hi {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.9);
+      margin-bottom: 6px;
+    }
+
+    .banner-sub {
+      font-family: 'Syne Mono', monospace;
+      font-size: clamp(0.65rem, 2vw, 0.85rem);
+      color: #c8e8c0;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-shadow: 0 1px 10px rgba(0,0,0,1);
+    }
+
+    .cursor {
+      display: inline-block;
+      animation: blink 1s infinite;
+      color: var(--green);
+    }
+
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    /* ── IDENTITY ── */
+    .identity {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.25rem 0;
+      border-bottom: 0.5px solid var(--border);
+      margin-bottom: 2rem;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    @keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:none} }
+
+    .avatar {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      background: var(--bg2);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .avatar svg { width: 32px; height: 32px; color: var(--dim); }
+
+    .id-text .name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .id-text .handle {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--dim);
+      margin-bottom: 8px;
+    }
+
+    .roles { display: flex; flex-wrap: wrap; gap: 5px; }
+
+    .role-tag {
+      font-size: 0.68rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: var(--bg2);
+      color: var(--muted);
+      border: 0.5px solid var(--border);
+    }
+
+    .role-tag.green {
+      background: var(--green-dark);
+      color: var(--green);
+      border-color: var(--green-border);
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .section:nth-child(2) { animation-delay: 0.1s; }
+    .section:nth-child(3) { animation-delay: 0.15s; }
+    .section:nth-child(4) { animation-delay: 0.2s; }
+    .section:nth-child(5) { animation-delay: 0.25s; }
+    .section:nth-child(6) { animation-delay: 0.3s; }
+
+    .sh {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sh::after {
+      content: '';
+      flex: 1;
+      height: 0.5px;
+      background: var(--border);
+    }
+
+    /* ── ABOUT ── */
+    .bio-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .bio-emoji { font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+
+    .bio-item strong { color: var(--text2); font-weight: 400; }
+
+    .divider {
+      height: 0.5px;
+      background: var(--border);
+      margin: 1.25rem 0;
+    }
+
+    .fun-label {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── BADGES ── */
+    .badges { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 0.75rem; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.72rem;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 0.5px solid var(--border);
+      background: var(--bg2);
+      color: var(--muted);
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .badge:hover { border-color: var(--green); color: var(--green); }
+
+    .badge img { height: 14px; width: auto; }
+
+    /* ── PROJECTS TABLE ── */
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    th {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--dim);
+      padding: 0.6rem 1rem;
+      text-align: left;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-bottom: 0.5px solid var(--border);
+      color: var(--muted);
+      vertical-align: middle;
+    }
+
+    td a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.82rem;
+    }
+
+    td a:hover { text-decoration: underline; }
+
+    tr:hover td { background: var(--bg2); }
+
+    .tool-pill {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.68rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: var(--bg2);
+      border: 0.5px solid var(--border);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* ── LINKS ── */
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 0.75rem; }
+
+    .link-btn {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.72rem;
+      padding: 7px 16px;
+      border-radius: 8px;
+      border: 0.5px solid var(--border2);
+      background: var(--bg2);
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .link-btn:hover { border-color: var(--green); color: var(--green); }
+
+    /* ── FOOTER ── */
+    .footer {
+      border-top: 0.5px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .views {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--dim);
+    }
+
+    .status-pill {
+      font-family: 'Syne Mono', monospace;
+      font-size: 0.68rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--green-dark);
+      color: var(--green);
+      border: 0.5px solid var(--green-border);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    @media (max-width: 500px) {
+      .banner { height: 200px; border-radius: 0; }
+      .identity { flex-direction: column; align-items: flex-start; }
+      th, td { padding: 0.6rem 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BANNER — replace forest.png with your actual image filename -->
+  <div class="banner">
+    <img src="forest.png" alt="forest banner" />
+    <div class="banner-overlay"></div>
+    <div class="banner-text">
+      <div class="banner-hi">Hi 👋, I'm Neha</div>
+      <div class="banner-sub">Aspiring Data Analyst · Nature Lover · Kamloops, BC<span class="cursor">_</span></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- IDENTITY -->
+    <div class="identity">
+      <div class="avatar">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="14" r="8" fill="currentColor"/>
+          <path d="M5 38c0-8.284 6.716-15 15-15s15 6.716 15 15" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="id-text">
+        <div class="name">Neha Malhan</div>
+        <div class="handle">@nra2629 · Kamloops, BC 🍁</div>
+        <div class="roles">
+          <span class="role-tag green">● open to opportunities</span>
+          <span class="role-tag">Data Analytics</span>
+          <span class="role-tag">Recent Graduate</span>
+          <span class="role-tag">🌿 Environment</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+      <div class="sh">🙋‍♀️ About Me</div>
+
+      <div class="bio-item">
+        <span class="bio-emoji">🔍</span>
+        <span>Explored data analytics through diverse projects using different tools, techniques and approaches. Feel free to explore my repos!</span>
+      </div>
+      <div class="bio-item">
+        <span class="bio-emoji">📊</span>
+        <span>Continuously expanding my knowledge and skillset while always being open to learning something new.</span>
+      </div>
+      <div class="bio-item">
+        <span class="bio-emoji">🔗</span>
+        <span>Looking to collaborate on data analysis and open-source analytics work!</span>
+      </div>
+      <div class="bio-item">
+        <span class="bio-emoji">🎓</span>
+        <span>Recent graduate seeking opportunities to contribute and grow professionally.</span>
+      </div>
+
+      <div class="divider"></div>
+      <div class="fun-label">⚡ Fun Facts</div>
+
+      <div class="bio-item">
+        <span class="bio-emoji">✈️</span>
+        <span>Love exploring new places and experiencing different cultures.</span>
+      </div>
+      <div class="bio-item">
+        <span class="bio-emoji">🤝</span>
+        <span>Naturally a people person — love socializing and connecting with others.</span>
+      </div>
+      <div class="bio-item">
+        <span class="bio-emoji">💡</span>
+        <span>I bring a strong understanding of <strong>people and behaviour</strong> into everything I do.</span>
+      </div>
+    </div>
+
+    <!-- TECH STACK -->
+    <div class="section">
+      <div class="sh">🛠️ Tools & Tech</div>
+      <div class="badges">
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/Python-3572A5?style=flat&logo=python&logoColor=white" alt="Python" /></a>
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white" alt="R" /></a>
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/SQL-f29111?style=flat&logo=mysql&logoColor=white" alt="SQL" /></a>
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white" alt="Tableau" /></a>
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/Excel-1D6F42?style=flat&logo=microsoft-excel&logoColor=white" alt="Excel" /></a>
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="Pandas" /></a>
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat&logo=python&logoColor=white" alt="Matplotlib" /></a>
+        <a class="badge" href="#"><img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white" alt="Jupyter" /></a>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="sh">📌 My Projects</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Description</th>
+              <th>Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://github.com/nra2629/YOUR_REPO_NAME">📁 YOUR_REPO_NAME</a></td>
+              <td><em>One sentence — what data, what you explored or found</em></td>
+              <td><span class="tool-pill">Python</span></td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/nra2629/YOUR_REPO_NAME">📁 YOUR_REPO_NAME</a></td>
+              <td><em>One sentence — what data, what you explored or found</em></td>
+              <td><span class="tool-pill">SQL</span></td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/nra2629/YOUR_REPO_NAME">📁 YOUR_REPO_NAME</a></td>
+              <td><em>One sentence — what data, what you explored or found</em></td>
+              <td><span class="tool-pill">R</span></td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/nra2629/YOUR_REPO_NAME">📁 YOUR_REPO_NAME</a></td>
+              <td><em>One sentence — what data, what you explored or found</em></td>
+              <td><span class="tool-pill">Tableau</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CONNECT -->
+    <div class="section">
+      <div class="sh">📫 Connect With Me</div>
+      <div class="links">
+        <a class="link-btn" href="YOUR_LINKEDIN_URL_HERE" target="_blank">
+          <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="" style="height:16px" />
+          LinkedIn
+        </a>
+        <a class="link-btn" href="mailto:YOUR_EMAIL_HERE">
+          <img src="https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white" alt="" style="height:16px" />
+          Email
+        </a>
+        <a class="link-btn" href="https://github.com/nra2629" target="_blank">
+          <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white" alt="" style="height:16px" />
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="views">Kamloops, BC 🍁</div>
+      <div class="status-pill"><span class="dot"></span> open to opportunities</div>
+    </div>
+
+  </div>
+</body>
+</html>
