@@ -49,7 +49,7 @@
 
 <div>
 
-`Statistical Analysis` · `Data Visualization` · `Regression` · `Time Series` · `Experimental Design` · `Machine Learning` · `Deep Learning` · `Multivariate Statistics`
+`Statistical Analysis` · `Data Visualization` · `Regression` · `Time Series` · `Experimental Design` · `RAG` · `Artificial Intelligence` · `Simulations & Modelling` · `Machine Learning` · `Deep Learning` · `Multivariate Statistics`
 
 </div>
 ---
