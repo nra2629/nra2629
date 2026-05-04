@@ -18,11 +18,6 @@
 
 <br/>
 
----
-
-## 🌿 Aspiring Data Analyst | Kamloops, BC 🍁
-
----
 
 ### 🌱 About Me
 
