@@ -43,13 +43,11 @@
 ![SQL](https://img.shields.io/badge/SQL-f29111?style=flat&logo=mysql&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-1D6F42?style=flat&logo=microsoft-excel&logoColor=white)
-![PyMongo](https://img.shields.io/badge/Excel-1D6F42?style=flat&logo=microsoft-excel&logoColor=white)
-![R Shiny](https://img.shields.io/badge/Excel-1D6F42?style=flat&logo=microsoft-excel&logoColor=white)
+![Shiny](https://img.shields.io/badge/Shiny-276DC3?style=flat&logo=r&logoColor=white)
 
 ### 🧠 Areas of Interest
 
-Machine Learning · Deep Learning · RAG · Time Series · Multivariate Statistics . Regression . Simulation & Modelling . AI 
-
+Statistical Analysis · Data Visualization · Regression · Time Series · Experimental Design · Artificial Intelligence · RAG · Simulation & Modelling · Machine Learning · Deep Learning · Multivariate Statistics
 
 ---
 
