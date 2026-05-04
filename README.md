@@ -1,3 +1,6 @@
+
+<div align="center">
+  
 # Hi 👋, I'm Neha
 
 <!-- 
@@ -10,8 +13,6 @@
   - Example: if you upload "forest.jpg" → write forest.jpg
   ============================================================
 -->
-
-<div align="center">
   <img src="forest.png" alt="banner" width="100%" />
 </div>
 
