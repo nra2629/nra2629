@@ -47,8 +47,11 @@
 
 ### 🧠 Areas of Interest
 
-Statistical Analysis · Data Visualization · Regression · Time Series · Experimental Design · Artificial Intelligence · RAG · Simulation & Modelling · Machine Learning · Deep Learning · Multivariate Statistics
+<div>
 
+`Statistical Analysis` · `Data Visualization` · `Regression` · `Time Series` · `Experimental Design` · `Machine Learning` · `Deep Learning` · `Multivariate Statistics`
+
+</div>
 ---
 
 ### 📌 My Projects
