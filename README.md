@@ -19,12 +19,12 @@
 <br/>
 
 
-### 🌱 About Me
+### 🙋‍♀️ About Me
 
-- 🌱 Currently working on **data analytics projects** involving real-world datasets and exploratory analysis
-- 📊 Learning advanced **data visualization** and statistical techniques
-- 👯 Looking to collaborate on **data analysis** and open-source analytics work — especially environment-related projects
-- 🎓 Recent graduate seeking opportunities to contribute and grow professionally
+- 🔍 Explored data analytics through diverse projects using different tools, techniques and approaches. Feel free to explore my repos!
+- 📊 Continuously expanding my knowledge and skillset while always being open to learning something new.
+- 👯 Looking to collaborate on data analysis and open-source analytics work!
+- 🎓 Recent graduate seeking opportunities to contribute and grow professionally.
 
 ---
 
