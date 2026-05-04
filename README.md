@@ -12,7 +12,7 @@
 -->
 
 <div align="center">
-  <img src="YOUR_IMAGE_NAME.jpg" alt="banner" width="100%" />
+  <img src="forest.png" alt="banner" width="100%" />
 </div>
 
 <br/>
