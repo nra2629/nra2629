@@ -60,7 +60,3 @@
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:neha0926p@gmail.com)
 
 ---
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=nra2629&color=3fb950&style=flat" alt="profile views" />
-</div>
