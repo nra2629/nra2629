@@ -43,7 +43,7 @@
 ![Excel](https://img.shields.io/badge/Excel-1D6F42?style=flat&logo=microsoft-excel&logoColor=white)
 ![Shiny](https://img.shields.io/badge/Shiny-276DC3?style=flat&logo=r&logoColor=white)
 
-### 🧠 Areas Studied
+### 🧠 Relevant Coursework
 
 <div>
 
