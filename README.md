@@ -19,7 +19,7 @@
 
 ### 🙋‍♀️ About Me
 
-- 🔍 Explored data analytics through diverse projects using different tools, techniques and approaches. Feel free to explore my repos!
+- 🔍 Explored data analytics through diverse projects using different tools, techniques and approaches. 
 - 📊 Continuously expanding my knowledge and skillset while always being open to learning something new.
 - 🔗 Looking to collaborate on data analysis and open-source analytics work!
 - 💼 Seeking opportunities to contribute and grow professionally.
