@@ -11,7 +11,7 @@
   - Example: if you upload "forest.jpg" → write forest.jpg
   ============================================================
 -->
-  <img src="banner.png" alt="banner" width="100%" />
+  <img src="Image.png" alt="banner" width="100%" />
 </div>
 
 <br/>
