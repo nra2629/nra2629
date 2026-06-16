@@ -26,11 +26,11 @@
 
 ---
 
-### ⚡ Fun Facts
+### 🌱 Beyond Data
 
-- ✈️ Always up for exploring new places and different cultures!
-- 🤝 A people person who enjoys meeting and connecting with others!
-- 🌿 Enjoy being around nature whenever I can!
+- 🌍 Enjoy exploring new places and experiencing different cultures.
+- 🤝 Value collaboration, communication, and building meaningful connections.
+- 🌿 Appreciate spending time in nature.
 
 ---
 
