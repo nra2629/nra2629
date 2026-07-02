@@ -1,17 +1,6 @@
 
 <div align="center">
-
-<!-- 
-  ============================================================
-  STEP 1 — YOUR BANNER IMAGE
-  ============================================================
-  - Upload your forest photo into this repo on GitHub
-    (click "Add file" → "Upload files" when inside the repo)
-  - Then replace  YOUR_IMAGE_NAME.jpg  below with your file name
-  - Example: if you upload "forest.jpg" → write forest.jpg
-  ============================================================
--->
-  <img src="Image12.png" alt="banner" width="100%" height="300" />
+  <img src="Img1.png" alt="banner" width="100%" height="300" />
 </div>
 
 <br/>
